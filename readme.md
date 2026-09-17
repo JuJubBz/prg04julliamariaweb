@@ -9,13 +9,22 @@ Este projeto abriga a interface web para o RiffReview, com o objetivo de criar u
 * **Comentários e Resenhas:** Espaço para os usuários escreverem descrições em texto sobre suas opiniões e lerem o que outras pessoas acharam das faixas.
 * O layout e as interações poderão ser divididos entre os atores do sistema, como o **Usuário Comum**, que explora o catálogo, dá notas e escreve resenhas, e possivelmente um **Administrador**, responsável por moderar as opiniões e manter o catálogo de bandas e álbuns atualizado.
 
-## 🗂️ Estrutura inicial do Projeto
+## 🗂️ Estrutura do Projeto
 
-* 📄 `index.html`: O arquivo principal e ponto de entrada da aplicação.
-* 📁 `assets/icon/favicon.png`: Ícone (favicon) de identificação da aplicação que é exibido na aba do navegador.
-* 📁 `css/`: Pasta criada para armazenar as folhas de estilo.
-* 📁 `js/`: Pasta criada para armazenar os scripts da aplicação.
-*(As pastas css e js estão presentes na estrutura, mas aguardam a inclusão dos arquivos de código nas próximas etapas).*
+A organização de pastas e arquivos está dividida da seguinte forma:
+
+* 📁 `infraestructure/`: Diretório base para recursos de infraestrutura visual e estática.
+  * 📁 `assets/`: Contém todos os recursos complementares utilizados nas páginas.
+    * 📁 `audio/`: Arquivos de áudio da aplicação (ex: `pianinho_massa.wav`).
+    * 📁 `css/`: Folhas de estilo para a customização visual (ex: `style.css`).
+    * 📁 `fonts/`: Fontes tipográficas personalizadas.
+    * 📁 `icons/`: Ícones utilizados no projeto, incluindo o favicon principal (`iconjuju.ico`).
+    * 📁 `images/`: Imagens gerais do layout e do catálogo.
+    * 📁 `js/`: Scripts para lógicas de interação.
+* 📁 `pages/`: Concentra os documentos e marcações estruturais em HTML.
+  * 📁 `tests/`: Diretório reservado para páginas de testes, atividades e rascunhos (ex: `atividade-3.html`, `atividade4.html`, `sandbox.html`).
+  * 📄 `index.html`: Arquivo principal e ponto de entrada da aplicação web.
+* 📄 `readme.md`: Documentação geral do projeto.
 
 ## 🚀 Evolução Futura da Estrutura
 
