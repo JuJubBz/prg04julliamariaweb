@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    margin-top: 0;
+}
+
+body {
+    background-color: #121212; /* Cor de fundo escura do modelo */
+    color: #e0e0e0; /* Cinza bem clarinho para o texto padrão não ofuscar a visão */
+    font-family: 'Red Hat Display', sans-serif; /* Fonte padrão para todo o site */
+}
+
+h1, h2, h3 {
+    font-family: 'Gravitas One', serif;
+    font-weight: normal; /* A Gravitas One já é bem grossa por padrão */
+}
+
+.texto-verde {
+    color: #34d364; 
+}
+
+#menu a:hover {
+    transition: color 0.6s ease;
+    color: #34d364;
+}
+
+.apresentacao {
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Impede que o texto fique largo demais em telas grandes */
+    margin: 60px auto; /* Dá um espaço de 60px em cima/baixo e centraliza o bloco no meio da tela */
+}
+
+.apresentacao h1 {
+    font-size: 3rem; /* Deixa o título bem grande */
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+}
+
+.apresentacao p {
+    font-size: 1.1rem; /* Aumenta um pouco o texto de leitura */
+    line-height: 1.6; /* Aumenta o espaço entre as linhas para facilitar a leitura */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0px 20px;
+}
+
+#menu ul {
+    display: flex; /*coloca um do lado do outro*/
+    list-style: none; /*remove os marcadores da lista*/
+    gap: 20px; /*espaçamento entre os itens*/
+    margin: 0; /*remove a margem padrão*/
+    padding: 0; /*remove o padding padrão*/
+}
+
+#menu a {
+    text-decoration: none;   
+    color: inherit;          
+    font-weight: bold;
+}
+
+.video{
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 880px;
+    margin: 60px auto 80px;
+    border: 1px solid rgba(52, 211, 100, 0.35);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.video iframe,
+.video video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
