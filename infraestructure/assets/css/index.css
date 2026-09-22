@@ -32,7 +32,7 @@ h1, h2, h3 {
 }
 
 .apresentacao {
-    text-align: center; /* Centraliza o texto */
+    text-align: justify; /* Centraliza o texto */
     max-width: 800px; /* Impede que o texto fique largo demais em telas grandes */
     margin: 60px auto; /* Dá um espaço de 60px em cima/baixo e centraliza o bloco no meio da tela */
 }
@@ -48,7 +48,7 @@ h1, h2, h3 {
 }
 
 header {
-    display: flex;
+    flex-wrap: nowrap
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 0px 20px;
