@@ -18,17 +18,18 @@ hr {
 
 /* Base do site */
 body {
-    background-color: #121212; /* Cor de fundo escura do modelo */
-    color: #e0e0e0; /* Cinza bem clarinho para o texto padrão não ofuscar a visão */
-    font-family: 'Red Hat Display', sans-serif; /* Fonte padrão para todo o site */
-    min-height: 100vh; /* altura mínima = tela inteira, dá espaço pro flex esticar */
+    background-color: #121212; 
+    color: #e0e0e0; 
+    font-family: 'Red Hat Display', sans-serif; 
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* empilha header/hr/main/footer; qualquer um pode usar flex:1 pra "esticar" */
+    flex-direction: column; 
 }
 
 h1, h2, h3 {
     font-family: 'Gravitas One', serif;
-    font-weight: normal; /* A Gravitas One já é bem grossa por padrão */
+    font-weight: normal; 
+    margin-bottom: 25px;
 }
 
 /* Utilitário de cor, usado em títulos e destaques */
@@ -80,4 +81,12 @@ header {
 .btn-login:hover {
     background-color: #28a745;
     transform: translateY(-1px);
+}
+
+main a {
+    margin-top: 30px; 
+}
+
+main .btn-login {
+    margin: 0; 
 }
