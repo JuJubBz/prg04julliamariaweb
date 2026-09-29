@@ -16,14 +16,14 @@ hr {
 }
 
 body {
-    background-color: #121212; /* Cor de fundo escura do modelo */
-    color: #e0e0e0; /* Cinza bem clarinho para o texto padrão não ofuscar a visão */
-    font-family: 'Red Hat Display', sans-serif; /* Fonte padrão para todo o site */
+    background-color: #121212; 
+    color: #e0e0e0; 
+    font-family: 'Red Hat Display', sans-serif; 
 }
 
 h1, h2, h3 {
     font-family: 'Gravitas One', serif;
-    font-weight: normal; /* A Gravitas One já é bem grossa por padrão */
+    font-weight: normal; 
 }
 
 .texto-verde {
@@ -36,34 +36,37 @@ h1, h2, h3 {
 }
 
 .apresentacao {
-    text-align: justify; /* Centraliza o texto */
-    max-width: 800px; /* Impede que o texto fique largo demais em telas grandes */
-    margin: 60px auto; /* Dá um espaço de 60px em cima/baixo e centraliza o bloco no meio da tela */
+    text-align: justify; 
+    max-width: 800px; 
+    margin: 40px auto;
+    padding: 0 20px; /* Adiciona espaçamento interno horizontal, pra nao encostar na borda do cll */
 }
 
 .apresentacao h1 {
-    font-size: 3rem; /* Deixa o título bem grande */
-    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+    text-align: center;
+    font-size: 1.8rem; 
+    margin-bottom: 16px; 
 }
 
 .apresentacao p {
-    font-size: 1.1rem; /* Aumenta um pouco o texto de leitura */
-    line-height: 1.6; /* Aumenta o espaço entre as linhas para facilitar a leitura */
+    font-size: 1.1rem; 
+    line-height: 1.6; 
 }
 
 header {
-    flex-wrap: nowrap
+    display: flex; /* Define o layout como flexível */
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 0px 20px;
 }
 
 #menu ul {
-    display: flex; /*coloca um do lado do outro*/
-    list-style: none; /*remove os marcadores da lista*/
-    gap: 20px; /*espaçamento entre os itens*/
-    margin: 0; /*remove a margem padrão*/
-    padding: 0; /*remove o padding padrão*/
+    display: flex; 
+    flex-wrap: wrap;/* Permite que os itens do menu se ajustem em várias linhas, se necessário. Quebra*/
+    justify-content: center;
+    list-style: none; 
+    gap: 20px; 
 }
 
 #menu a {
@@ -95,19 +98,51 @@ header {
 
 .btn-login {
     display: block;
-    margin: 0 auto 90px; /* Centraliza o botão e adiciona espaço embaixo */
-    padding: 12px 50px; /* Espaçamento interno do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    color: #ffffff; /* Cor do texto do botão */
-    background-color: #34d364; /* Cor de fundo do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 10px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 90px; 
+    padding: 12px 50px; 
+    font-size: 1rem; 
+    text-align: center;
+    color: #ffffff; 
+    background-color: #34d364; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
     font-family: 'Red Hat Display', sans-serif;
 }
 
 .btn-login:hover {
     background-color: #28a745; /* Cor de fundo ao passar o mouse */
     transform: translateY(-1px); /* Leve elevação ao passar o mouse */
+}
+
+@media (min-width: 601px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+ 
+    .apresentacao {
+        margin: 60px auto;
+    }
+ 
+    .apresentacao h1 {
+        font-size: 2.4rem;
+    }
+ 
+    .video {
+        margin: 60px auto 80px;
+    }
+ 
+    .btn-login {
+        margin-bottom: 90px;
+    }
+}
+
+@media (min-width: 1025px){
+     .apresentacao h1 {
+        font-size: 3rem;
+    }
 }
